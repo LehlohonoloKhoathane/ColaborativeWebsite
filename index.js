@@ -103,5 +103,5 @@
     function showFile(input) {
         let file = input.files[0];
         alert(`File name: ${file.name}`); 
-        alert(`Last modified: ${file.lastModified}`);
+        
       }
