@@ -427,4 +427,45 @@ tr:nth-child(odd){
 	font-size:50px;
 	background-color:#000;
 }
+/*cookies section*/
 
+.container{
+    width: 1600px;
+    margin: auto;
+}
+.subContainer{
+    width: 85%;
+    margin: auto;
+}
+#cookies{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.cookies{
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: px;
+}
+
+.cookies a{
+    color: red;
+    font-weight: 500;
+    text-decoration: none;
+}
+#cookiesBtn{
+    border-radius: 5px;
+    padding: 8px 12px 8px 12px;
+    font-size: 1rem;
+    font-family: inherit;
+    cursor: pointer;
+    border: 3px solid white;
+    background-color: black;
+    color: white;
+}
