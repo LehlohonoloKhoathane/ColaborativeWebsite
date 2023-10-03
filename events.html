@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login or Sign Up</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.login-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+label, input {
+    margin-bottom: 10px;
+    display: block;
+}
+
+input[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login or Sign Up</h2>
+        <div id="login-form-container">
+            <form id="login-form">
+                <h3>Login</h3>
+                <label for="login-username">Username:</label>
+                <input type="text" id="login-username" name="login-username" required><br>
+                <label for="login-password">Password:</label>
+                <input type="password" id="login-password" name="login-password" required><br>
+                <input type="submit" value="Login">
+            </form>
+        </div>
+        <div id="signup-form-container" style="display:none;">
+            <form id="signup-form">
+                <h3>Sign Up</h3>
+                <label for="signup-username">Username:</label>
+                <input type="text" id="signup-username" name="signup-username" required><br>
+                <label for="signup-password">Password:</label>
+                <input type="password" id="signup-password" name="signup-password" required><br>
+                <input type="submit" value="Sign Up">
+            </form>
+        </div>
+        <button id="toggle-form">Switch to Sign Up</button>
+    </div>
+
+    <script src="script.js">
+        document.getElementById('login-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    var username = document.getElementById('login-username').value;
+    var password = document.getElementById('login-password').value;
+
+    // Check the username and password (replace this with your own authentication logic)
+    if (username === 'username' && password === 'password') {
+        alert('Login successful!');
+        // Redirect to the Tic Tac Toe game or another page
+        window.location.href = 'tic_tac_toe.html';
+    } else {
+        alert('Invalid login. Please try again.');
+    }
+});
+
+document.getElementById('signup-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    var username = document.getElementById('signup-username').value;
+    var password = document.getElementById('signup-password').value;
+
+    // Add signup logic here (e.g., create a new user in a database)
+    alert('Signup successful! Please login.');
+    toggleForms(); // Switch back to login form after successful signup
+});
+
+document.getElementById('toggle-form').addEventListener('click', function() {
+    toggleForms();
+});
+
+function toggleForms() {
+    var loginForm = document.getElementById('login-form-container');
+    var signupForm = document.getElementById('signup-form-container');
+
+    if (loginForm.style.display === 'none') {
+        loginForm.style.display = 'block';
+        signupForm.style.display = 'none';
+        document.getElementById('toggle-form').textContent = 'Switch to Sign Up';
+    } else {
+        loginForm.style.display = 'none';
+        signupForm.style.display = 'block';
+        document.getElementById('toggle-form').textContent = 'Switch to Login';
+    }
+}
+
+    </script>
+</body>
+</html>

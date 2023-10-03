@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css/style.css">
+    <link rel="stylesheet" href="styles.css/onfocus.css">
+    <link rel="stylesheet" href="styles.css/contacts.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </head>
+    <body>
+        <nav role="navigation" aria-label="Main Menu">          <!--Creating a website navigation-->
+            <label class="logo" style="font-size:50px;font-family:forte;">Midnight Coders</label>         <!--company logo-->
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contactme.html">Contact Us</a></li>
+                <li><a href="aboutme.html">About Us</a></li>
+                <li><a href="ourServices.html">Our Services</a></li>
+                <li><a href="game.html" target="_blank">Events</a></li>
+            </ul>
+        </nav>
+        <br>
+        <div class="contact-me">    <!--section for contacts-->
+            <a class="mail-me" href="mailto:khoathanelehlohonolo@gmail.com"> Click Here to sent us an email</a>
+            <a class="call-me" href="tel: +27 693 08 2630"> Click Here to give us a call</a>
+        </div>
+        <div class="commentBox">
+            <!--
+            <div class="contacts-info">
+                <div class="cont-box">
+                    <div class="icon"><i class="fa fa-map-marker-alt" aria-hidden="true"></i></div>
+                    <div class="text-contact">
+                        <h3>Address</h3>
+                        <p>South Africa <br> Western Cape <br> Cape Town  7925, </p>
+                    </div>
+                </div>
+                <div class="cont-box">
+                    <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                    <div class="text-contact">
+                        <h3>Phone Number</h3>
+                        <p>(+27) 69 308 2630</p>
+                    </div>
+                </div>
+                <div class="cont-box">
+                    <div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                    <div class="text-contact">
+                        <h3>Email Address</h3>
+                        <p>khoathanelehlohonolo@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            -->
+            <h2>Let Us Call You</h2>
+            <form id="form" action="#">         <!--creating a form-->
+                <input id="fullName" name="firstName" placeholder="Full Name" type="text" class="form-input"> <!--input for full names-->
+                <span class="errorMessage" id="nameError"></span>
+                <input id="phone" name="phone" placeholder="Phone Number" type="tel" class="form-input"> <!--input for phone numbers-->
+                <span class="errorMessage" id="phoneError"></span>
+                <input id="email" name="email" placeholder="example@e-mail.com" type="text" onfocus="highlightInput(this)" > <!--input for an email-->
+                <span class="errorMessage" id="emailError"></span>                          
+                <textarea id="comment" name="comment" placeholder="Please Type your Massage" type = "text"  onfocus="highlightInput(this)"></textarea>    <!--text area for a comment section-->
+                <span class="errorMessage" id="commentError"></span>
+                <button type="submit" id="submitButton">Submit</button>         <!--a button for submission-->
+            </form>
+        </div>
+    </body>
+    <script defer src="index.js"></script>
+</html>

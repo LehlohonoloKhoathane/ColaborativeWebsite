@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <meta lang="en-US" dir="ltr">
+        <link rel="stylesheet" href="styles.css/style.css">
+        <link rel="stylesheet" href="styles.css/slider.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </head>
+    <body onload= "window.alert('Page loaded Successfully')">
+        <nav role="navigation" aria-label="Main Menu">
+            <label class="logo" style="font-size:50px;font-family:forte;">Midnight Coders</label>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contactme.html">Contact Us</a></li>
+                <li><a href="aboutme.html">About Us</a></li>
+                <li><a href="ourServices.html">Our Services</a></li>
+                <li><a href="game.html" target="_blank">Events</a></li>
+            </ul>
+        </nav>
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="slider.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
+</head>
+<body>
+  <div class="container">
+        <!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide"><img src="images/Aphiwe.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="images/Dikgobe.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="images/Mandi.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="images/Maka.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="images/Lehlo.jpg" alt=""></div>
+      
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  
+    <!-- If we need navigation buttons -->
+    
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+  autoplay: {
+    delay: 2000,
+    disableOnIntraction: false,
+  },
+    loop: true,
+  
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+
+
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  
+   
+  });
+    </script>
+</body>
+</html>
+        <section class="about-text">
+            <div class="username">
+                <br>
+                <h1>Our Vision</h1>
+                <h3>To be the first choice of consumers and customers around the world 
+                    by bringing together innovative <i>ideas</i>,continuous process
+                    improvement and people who make things happen.
+                </h3>
+                <!--<img class="img1" src="images/MyImage3.jpg" alt="Coding Picture" width="500px" height="300px"> <br>
+                <img class="img1s" srcset="images/MyImage3.jpg 2x,
+                images/MyImage3.jpg 3x
+                images/MyImage3.jpg 4x" alt=""><br> -->
+            </div>
+          
+            <div class="ourVideo">
+                <video class="myvid" width="1000" height="700" controls>
+                    <source src="videos/video1.mp4" type="video/mp4" >
+                    <track kind="subtitles" src="videos/captions.vtt" srclang="en" label="English" default>
+                    <track src="videos/captioning.vtt" kind="captions" srclang="se" label="Sesotho">
+                    <track src="videos/captionings.vtt" kind="subtitles" srclang="af" label="Afrikaans">
+                </video> <br>
+                <iframe class="myframe" width="560" height="315" src="https://www.youtube.com/embed/0CmtDk-joT4" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+                clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen></iframe>
+            </div>
+        </section>
+        <div class="our-table">
+            <caption class="myCaption">Meet Our Team</caption>
+            <table class="mytable">
+                <tr>
+                    <th>Position</th><th>First Name:</th><th>Surname:</th><th>Contacts:</th>
+                </tr>
+                <tr>
+                    <th>Project Manager</th><td>Aphiwe</td><td>Sikhuphela</td><td>073 192 2743</td>
+                </tr>
+                <tr>
+                    <th>Team Programmer</th>
+                    <td>Dikgobe</td>
+                    <td>Molepo</td>
+                    <td>060 748 2878</td>
+                </tr>
+                <tr>
+                    <th>Team Analyst</th>
+                    <td>Makabongwe</td>
+                    <td>Metuso</td>
+                    <td>060 580 1432</td>
+                </tr>
+                <tr> 
+                    <th>Team Lead</th>
+                    <td>Mandiseli</td>
+                    <td>Mfeya</td>
+                    <td>063 109 5231</td>
+                </tr>
+                <tr>
+                    <th>Team Member</th>
+                    <td>Lehlohonolo</td>
+                    <td>Khoathane</td>
+                    <td>069 308 2630</td>
+                </tr>
+            </table>
+        </div>
+        <footer>
+            <div class="footerContainer">
+                <div class="socialIcons">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                </div>
+                <div class="footerNav">
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">News</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact Us</a></li>
+                        <li><a href="">Our Team</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footerBottom">
+                <p>Copyright &copy;2023; Designed By <span class="Designer">Midnight Coders</span></p>
+            </div>
+        </footer>
+        <br>
+    </body>
+    </html>

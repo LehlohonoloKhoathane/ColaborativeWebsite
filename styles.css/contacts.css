@@ -1,0 +1,33 @@
+/*.commentBox .contacts-info{
+    width: 50%;
+    display: flex;
+    flex-direction: column;  
+}
+.commentBox .contacts-info .cont-box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.commentBox .contact-info .cont-box .icon{
+    min-width: 60px;
+    height: 60px;
+    background: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+.commentBox .contacts-info .cont-box .text-contact{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+.commentBox .contacts-info .cont-box .text-contact h3{
+    font-weight: 500;
+    color: aqua;
+}
+*/

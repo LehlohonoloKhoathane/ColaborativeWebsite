@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap'); /* importing poppins fonts family */
+
+
+*{     /* styling of everything in the html*/                     
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: #f9f1f1;
+    /*background-image: linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)), url(images/background.png);*/
+    height: auto;
+    /*display: grid;*/
+    /*place-items: center;*/
+}
+.img1{
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+    float: left;
+    margin-right: 100px;
+}
+.img1s{
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+    float: left;
+    margin-right: 100px;
+}
+.img-fluid{
+    border-radius: 10px;
+    float: left;
+    margin-right: 100px;
+}
+
+.welcome{
+    color: #00c4cc;
+    text-transform: capitalize;
+    padding: 50px 0px 50px 10px;
+    font-size: 60px;
+  }
+  
+
+.username{
+    color: #00c4cc;
+    font-size: x-large;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-transform: capitalize;
+    width: 600;
+}
+
+.container{
+    padding: 20px 60px 30px 100px;
+    align-items: center;
+    height: 700;
+    color: #00c4cc;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.container article{
+    color: #00c4cc;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.container sub{
+    color: #00c4cc;
+}
+
+.footerContainer{
+    width: 100%;
+    padding: 70px 30px 20px;
+}
+*{
+    padding: 0%;
+    margin: 0%;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+nav{   /*navigation bar styling*/
+    background: #f9f1f1;
+    height: 80px;
+    width: 100%;
+}
+
+nav a:hover{
+    color: #00abf0;
+}
+
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+.socialIcons{     /*displaying our icons center*/
+    display: flex;
+    justify-content: center;
+}
+.socialIcons a{  /*making th back ground color of icons to be white using anchor (a)*/
+    text-decoration: none;
+    padding: 10px;
+    background-color: #f9f1f1;
+    margin: 10px;
+    border-radius: 60%;
+}
+.socialIcons a i{  /*making the color of our icons black */
+    font-size: 2em;
+    color: black;
+    opacity: 0.9;
+}
+.socialIcons a:hover i{ /*change color of the icon when pointing at it*/
+    color: lightseagreen;
+    transition: 0.5s;
+}
+.footerNav{  /*styling navebar on footer*/
+    margin: 30px 0;
+}
+
+.footerNav a:hover{
+    color: #00abf0;
+}
+
+.footerNav ul{   /*styling the list on navbar*/
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+.footerNav ul li a{   /*styling the links of header on navbar*/
+    color: #00c4cc;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 1.7;
+    transition: 0.5s;
+}
+.footerNav ul li a:hover{
+    opacity: 1s;
+}
+.footerBottom{
+    background-color: #f9f1f1;
+    padding: 20px;
+    text-align: center;
+}
+.footerBottom p{
+    color: #00c4cc;
+}
+.Designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+label.logo{      
+    color: #00c4cc;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+nav ul li a{
+    color: #00c4cc;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 17px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+
+/*a.active, a.hover{
+    background: #1b9bff;
+    transition: .5s;
+}*/
+.navbar-link li:hover{
+    background-color:red;
+}
+@media (max-width: 700px){
+    .footerNav ul{
+        flex-direction: column;
+    }
+    .footerNav ul li{
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+}
+.commentBox{
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    padding: 150px 10px 10px 10px;
+}
+.commentBox h2{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.commentBox input{
+    width: 100%;
+    height: 50px;
+    padding: 0 20px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+
+}
+.commentBox input:focus{
+    border: 2px solid #1b9bff;
+    color: #1b9bff;
+    outline: none;
+    transition: all 0.3s ease;
+}
+.commentBox input:focus::placeholder,
+.commentBox textarea:focus::placeholder{
+    padding: 4px;
+    color: #1b9bff;
+    transition: all 0.3s ease;
+}
+.commentBox textarea{
+    width: 100%;
+    height: 150px;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #1b9bff;
+}
+.commentBox textarea:focus{
+    color: #1b9bff;
+    border: 2px solid #1b9bff;
+   outline: none;
+}
+
+.commentBox button{
+    border: 0;
+    padding: 10px 30px;
+    background: #1b9bff;
+    font-size: 18px;
+    border-radius: 5px;
+    color: beige;
+}
+
+.commentBox button:hover{
+    background-color: #235a56;
+}
+.figimg{
+    float: right;
+    max-width: 380px;
+    max-height: 300px;
+}
+
+figure {
+    border: thin #c0c0c0 solid;
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    max-width: 400px;
+    margin: auto;
+  }
+
+
+figcaption {
+    background-color: #222;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+  }
+
+.about-text{
+    padding: 20px 60px 30px 100px;
+    align-items: center;
+    height: 700;
+}
+
+.our-table{
+    align-items: center;
+    padding: 30px 10px 30px 100px ;
+}
+
+.myCaption{
+    padding: 100px;
+    font-weight: 400;
+    border: 2px solid red;
+}
+
+th{
+    text-align: left;
+}
+
+table, th, td{
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding: 30px;
+    font-size: x-large;
+}
+
+th, td{
+    padding: 9px;
+}
+
+tr:nth-child(even){
+    background-color: #235a56;
+}
+
+tr:nth-child(odd){
+    background-color: #c0c0c0;
+}
+
+.contact-me{
+
+    color: #00c4cc;
+    position: relative;
+    justify-content: center;
+    font-weight: 600;
+    align-items: center;
+    padding: 20px;
+    font-weight: bold;
+}
+
+.contact-me a{
+    font-size: large;
+}
+
+.mail-me, .call-me{
+    font-weight: 600;
+    font-size: 600px;
+    /*border: 1px solid red;*/
+    color: #00c4cc;
+    padding: 20px 30px 50px 100px;
+}
+
+.service{
+    width: 900px;
+    justify-content: center;
+    align-content: center;
+    padding: 100px;
+    color: #00c4cc;
+    font-weight: 700;
+}
+.navbar a:hover,
+.navbar a.active{   /* enabling a link to be selected , selecting and styling the active link in navigation bar */
+    color: #00abf0;
+}
+
+.myframe{
+    border-radius: 10px;
+    align-items: center;
+}
+
+.myvid{
+    border-radius: 10px;
+}
+
+.mytable{
+    border: 1px solid red;
+}
+.myAudio{
+    padding: 10px;
+    align-items: center;
+}
+.errorMessage{
+    color: red;
+}
+.nav_link{
+    display: inline-block;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.nav_link:hover{
+    background-color:skyblue;
+}
+.ser_container h1{
+    text-align: center;
+    padding-top: 100px;
+}
+.ser_container h1::after{
+    content: '';
+    background: red;
+    display: block;
+    height: 4px;
+    width: 280px;
+    margin: 20px auto 50px;
+}
+.ourServices .service_icon{
+    font-size: 30px;
+    margin: 20px auto;
+    padding: 20px;
+    height: 70px;
+    width: 70px;
+    border: 2px solid #00c4cc;
+    border-radius: 50px;
+}
+.ourServices p{
+    margin-top: 10px;
+    padding: 20px;
+}
+
+.middle{
+	width: 100%;
+	border-bottom:2px solid #f0f0f0;
+    margin-left: 200px;
+}
+
+.middle div{
+	width:1200px;
+	height:400px;
+	font-family:calibri;
+}
+
+.middle div p{
+	width:1000px;
+	font-weight:bold;
+	height:300px;
+	color:#fff;
+	opacity:0.2;
+	font-size:50px;
+	background-color:#000;
+}
+

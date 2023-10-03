@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 60%;
+    height: 80vh;
+    background: #f9f1f1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    margin-left: 400px;
+}
+
+.swiper{
+    width: 60%;
+    height: 100%;
+}
+
+.swiper-slide img{
+    width: 100%;
+    
+   
+}
+
+.swiper .swiper-pagination-bullet-active{
+    background: #fff;
+}
