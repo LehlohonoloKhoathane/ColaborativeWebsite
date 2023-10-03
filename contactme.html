@@ -49,7 +49,7 @@
             </div>
             -->
             <h2>Let Us Call You</h2>
-            <form id="form" action="#">         <!--creating a form-->
+            <form id="form" action="#"><!--creating a form-->
                 <input id="fullName" name="firstName" placeholder="Full Name" type="text" class="form-input"> <!--input for full names-->
                 <span class="errorMessage" id="nameError"></span>
                 <input id="phone" name="phone" placeholder="Phone Number" type="tel" class="form-input"> <!--input for phone numbers-->
@@ -58,9 +58,19 @@
                 <span class="errorMessage" id="emailError"></span>                          
                 <textarea id="comment" name="comment" placeholder="Please Type your Massage" type = "text"  onfocus="highlightInput(this)"></textarea>    <!--text area for a comment section-->
                 <span class="errorMessage" id="commentError"></span>
-                <button type="submit" id="submitButton">Submit</button>         <!--a button for submission-->
+                <input type="file" onchange="showFile(this)">
+                <button type="submit" id="submitButton">Submit</button>  
+                
+                <!--a button for submission-->
             </form>
         </div>
+        <script>
+            function showFile(input) {
+              let file = input.files[0];
+              alert(`File name: ${file.name}`); 
+              alert(`Last modified: ${file.lastModified}`);
+            }
+          </script>
     </body>
     <script defer src="index.js"></script>
 </html>
