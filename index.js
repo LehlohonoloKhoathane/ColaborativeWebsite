@@ -134,7 +134,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         const formData = new FormData(this);       //create the new form from the previous one
     //initiating the fetch API request to the email URL
-        fetch("https://formspree.io/f/xknlpqdq", { 
+        fetch("https://formspree.io/hloni.khoathane@gmail.com", { 
             method: "POST",
             headers: {
                 "Accept": "application/json"        //specifying that we expect to receive a JSON file
