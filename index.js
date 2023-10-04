@@ -125,30 +125,29 @@ document.addEventListener('DOMContentLoaded', function() {
     function showFile(input) {
         let file = input.files[0];
         alert(`File name: ${file.name}`); 
-        
       }
 
     //Cross Origin Resource Sharing
 
-    document.getElementById('form').addEventListener('submit', function(event) {
+    document.getElementById("form").addEventListener("submit", function(event) {
         event.preventDefault(); // Prevent the form from submitting the traditional way
         
         const formData = new FormData(this);       //create the new form from the previous one
     //initiating the fetch API request to the email URL
-        fetch('https://formspree.io/f/xknlpqdq', { 
-            method: 'POST',
+        fetch("https://formspree.io/f/xknlpqdq", { 
+            method: "POST",
             headers: {
-                'Accept': 'application/json'        //specifying that we expect to receive a JSON file
+                "Accept": "application/json"        //specifying that we expect to receive a JSON file
             },
             body: formData
         })
         .then(response => response.json())
         .then(data => {
-            console.log('Success:', data);
-            alert('Form submitted successfully!');
+            console.log("Success:", data);
+            alert("Form submitted successfully!");
         })
         .catch(error => {
-            console.error('Error:', error);
-            alert('There was an error submitting the form. Please try again later.');
+            console.error("Error:", error);
+            alert("There was an error submitting the form. Please try again later.");
         });
     });
