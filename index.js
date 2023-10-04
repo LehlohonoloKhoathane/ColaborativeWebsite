@@ -118,7 +118,6 @@
         document.querySelector("#cookies").style.display = "hidden";
         setCookie("cookie", true, 30);
       }) */
-
       document.addEventListener('DOMContentLoaded', function() {
         const cookiesBanner = document.getElementById('cookies-banner');
         const acceptButton = document.getElementById('accept-cookies');
