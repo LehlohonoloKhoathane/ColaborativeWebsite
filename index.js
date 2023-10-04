@@ -20,26 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
     checkCookiesAccepted();
 });
 
-/*
-document.addEventListener('DOMContentLoaded', function() {
-    const cookiesBanner = document.getElementById('cookies-banner');
-    const acceptButton = document.getElementById('accept-cookies');
 
-    function hideBanner() { cookiesBanner.style.display = 'none'; }
-
-    acceptButton.addEventListener('click', function() {
-        document.cookie = 'cookies_accepted=true; expires=' + new Date(new Date().getTime() + 365 * 24 * 60 * 60 * 1000).toUTCString() + '; path=/';
-        hideBanner();
-    });
-
-    function checkCookiesAccepted() {
-        if (document.cookie.indexOf('cookies_accepted=true') !== -1) { hideBanner(); }
-        else { cookiesBanner.style.display = 'block'; }
-    }
-    
-    checkCookiesAccepted();
-});
-*/
 //declaring variables 
     const myForm = document.getElementById('form');
     const nameInput = document.getElementById('fullName');
@@ -147,20 +128,6 @@ document.addEventListener('DOMContentLoaded', function() {
         
       }
 
-      //cookies section
-     /* 
-      setCookie = (cName, cValue, expDays) => {
-        let date = new Date();
-        date.setTime(date.getTime() + (expDays * 24 * 60 * 1000));
-        const expires = "expires=" + date.toUTCString();
-        document.cookie = cName + "=" + cValue + ";" + expires + "; path=/";
-      }
-    
-      document.getElementById("cookiesBtn").addEventListener("click", () => {
-        document.querySelector("#cookies").style.display = "hidden";
-        setCookie("cookie", true, 30);
-      }) */
-      
     //Cross Origin Resource Sharing
 
     document.getElementById('form').addEventListener('submit', function(event) {
