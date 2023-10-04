@@ -481,7 +481,7 @@ hr{
 }
 */
 /*media of screen sizes*/
-@media all (max-width: 550px) {
+@media  (max-width: 550px) {
     
 }
 @media (orientation: landscape) {
