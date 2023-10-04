@@ -428,7 +428,17 @@ tr:nth-child(odd){
 	font-size:50px;
 	background-color:#000;
 }
-/*cookies section
+/*horizontal line/ruler*/
+hr{
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid #00c4cc;
+    margin: 20px auto;
+    padding: 90px;
+}
+
+
+/*cookies section*/
 .container{
     width: 1600px;
     margin: auto;
@@ -469,7 +479,7 @@ tr:nth-child(odd){
     background-color: black;
     color: white;
 }
-*/
+
 /*media of screen sizes*/
 @media all (max-width: 550px) {
     body:

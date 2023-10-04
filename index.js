@@ -24,7 +24,6 @@
         nameError.textContent = '';                 //clears the error message 
     })
 
-    
     //creating a function to check the validity of a phone number
     function validPhone(){
         const phoneValue = phoneInput.value;
@@ -119,3 +118,5 @@
         document.querySelector("#cookies").style.display = "none";
         setCookie("cookie", true, 30);
       }) 
+
+      
