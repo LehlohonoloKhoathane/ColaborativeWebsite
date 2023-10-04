@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const declineButton = document.getElementById('decline-cookies');
     function hideBanner() { cookiesBanner.style.display = 'none'; }
     function acceptCookies() {
-        document.cookie = 'cookies_accepted=true; expires=' + new Date(new Date().getTime() + 365 * 24 * 60 * 60 * 1000).toUTCString() + '; path=/home, path=/about, path=/contact, path=/services, path=/';
+        document.cookie = 'cookies_accepted=true; expires=' + new Date(new Date().getTime() + 365 * 24 * 60 * 60 * 1000).toUTCString() + '; path=/';
         hideBanner();
     }
     function declineCookies() {
