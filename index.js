@@ -114,9 +114,8 @@
         document.cookie = cName + "=" + cValue + ";" + expires + "; path=/";
       }
     
-      document.querySelector("#cookiesBtn").addEventListener("click", () => {
-        document.querySelector("#cookies").style.display = "none";
+      document.getElementById("cookiesBtn").addEventListener("click", () => {
+        document.querySelector("#cookies").style.display = "hidden";
         setCookie("cookie", true, 30);
       }) 
 
-      
