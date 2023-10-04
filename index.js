@@ -44,7 +44,7 @@
         }
     }
     phoneInput.addEventListener('input', function(){
-        phoneError.textContent = '';                //clear the error message when typing
+        phoneError.textContent = '';                //clears the error message when typing
     })
 
 
