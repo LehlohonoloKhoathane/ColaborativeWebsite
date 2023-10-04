@@ -502,6 +502,9 @@ hr{
     text-align: center;
     display: none; /* Hide by default */
 }
+.cookies-banner p{
+    color: white;
+}
 
 .accept-button {
     background-color: #00c4cc;
