@@ -198,7 +198,6 @@ nav ul li a{
 /*contact session*/
 .commentBox{
     top: 50%;
-    left: 10%;
     position: relative;
     margin-top: 200px;
     transform: translate(-50%, -50%);
@@ -524,3 +523,6 @@ hr{
     margin-top: 10px;
 }
 
+.google{
+    margin: 50px;
+}
