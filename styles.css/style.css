@@ -496,7 +496,8 @@ hr{
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: #f0f0f0;
+    background-color: rgba(0, 0, 0, 0.7);
+    /*background-color: #f0f0f0;*/
     padding: 10px 20px;
     text-align: center;
     display: none; /* Hide by default */
