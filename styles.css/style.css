@@ -438,7 +438,7 @@ hr{
 }
 
 
-/*cookies section*/
+/*cookies section
 .container{
     width: 1600px;
     margin: auto;
@@ -479,7 +479,7 @@ hr{
     background-color: black;
     color: white;
 }
-
+*/
 /*media of screen sizes*/
 @media all (max-width: 550px) {
     body:
@@ -490,3 +490,25 @@ hr{
 @media (orientation: portrait) {
     
 }
+
+.cookies-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f0f0f0;
+    padding: 10px 20px;
+    text-align: center;
+    display: none; /* Hide by default */
+}
+
+.accept-button {
+    background-color: #00c4cc;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+
