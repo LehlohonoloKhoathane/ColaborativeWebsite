@@ -1,3 +1,26 @@
+//cookies section
+document.addEventListener('DOMContentLoaded', function() {
+    const cookiesBanner = document.getElementById('cookies-banner');
+    const acceptButton = document.getElementById('accept-cookies');
+    const declineButton = document.getElementById('decline-cookies');
+    function hideBanner() { cookiesBanner.style.display = 'none'; }
+    function acceptCookies() {
+        document.cookie = 'cookies_accepted=true; expires=' + new Date(new Date().getTime() + 365 * 24 * 60 * 60 * 1000).toUTCString() + '; path=/home, path=/about, path=/contact, path=/services, path=/';
+        hideBanner();
+    }
+    function declineCookies() {
+        hideBanner();
+    }
+    acceptButton.addEventListener('click', acceptCookies);
+    declineButton.addEventListener('click', declineCookies);
+    function checkCookiesAccepted() {
+        if (document.cookie.indexOf('cookies_accepted=true') !== -1) { hideBanner(); }
+        else { cookiesBanner.style.display = 'block'; }
+    }
+    checkCookiesAccepted();
+});
+
+/*
 document.addEventListener('DOMContentLoaded', function() {
     const cookiesBanner = document.getElementById('cookies-banner');
     const acceptButton = document.getElementById('accept-cookies');
@@ -16,10 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     checkCookiesAccepted();
 });
-
-
-
-
+*/
 //declaring variables 
     const myForm = document.getElementById('form');
     const nameInput = document.getElementById('fullName');
@@ -31,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const emailError = document.getElementById('emailError');
     const commentError = document.getElementById('commentError');
 
-    //creating a function to validate the name
+//creating a function to validate the name
     function validName(){
         const nameValue = nameInput.value;          //declaring the constant value to a name input
         if(!nameValue){                             //if the name section is empty

@@ -510,5 +510,12 @@ hr{
     cursor: pointer;
     margin-top: 10px;
 }
-
+.decline-button{
+    background-color: #00c4cc;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+}
 
