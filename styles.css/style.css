@@ -430,7 +430,7 @@ tr:nth-child(odd){
 }
 /*cookies section*/
 .container{
-    width: 1600px;
+    width: 100%;
     margin: auto;
 }
 .subContainer{
@@ -468,4 +468,15 @@ tr:nth-child(odd){
     border: 3px solid white;
     background-color: black;
     color: white;
+}
+
+/*media of screen sizes*/
+@media all (max-width: 550px) {
+    body:
+}
+@media (orientation: landscape) {
+    
+}
+@media (orientation: portrait) {
+    
 }
