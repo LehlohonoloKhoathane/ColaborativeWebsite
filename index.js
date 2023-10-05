@@ -128,8 +128,7 @@ document.addEventListener('DOMContentLoaded', function() {
       }
 
 
-      ///////////////////////////////////////
-
+      ///////////////////////////////////////Cross Origin Resource Sharing part
 var form = document.getElementById("form");
 async function handleSubmit(event) {
   event.preventDefault();
