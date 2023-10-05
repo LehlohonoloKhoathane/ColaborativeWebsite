@@ -161,12 +161,12 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });*/
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-
+//cross origiin request 
 document.getElementById('form').addEventListener('submit', function(event) {
     event.preventDefault(); // Prevent the form from submitting the traditional way
     
     const formData = new FormData(this);
-    fetch('https://formspree.io/hloni.khoathane@gmail.com', {
+    fetch('https://formspree.io/f/xknlpqdq', {
         method: 'POST',
         headers: {
             'Accept': 'application/json'
