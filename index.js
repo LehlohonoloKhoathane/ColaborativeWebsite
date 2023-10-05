@@ -146,27 +146,36 @@ document.addEventListener('DOMContentLoaded', function() {
 =======
 
     //Cross Origin Resource Sharing
-
     document.getElementById("form").addEventListener("submit", function(event) {
         event.preventDefault(); // Prevent the form from submitting the traditional way
-        
-        const formData = new FormData(this);       //create the new form from the previous one
-    //initiating the fetch API request to the email URL
-        fetch("https://formspree.io/hloni.khoathane@gmail.com", { 
+    
+        const formData = new FormData(this); // Create the new form from the previous one
+    
+        // Access the file input element
+        const fileInput = document.getElementById("fileInput");
+    
+        // Check if a file is selected
+        if (fileInput.files.length > 0) {
+            // Append the selected file to the FormData object
+            formData.append("attachment", fileInput.files[0]);
+        }
+    
+        // Initiating the fetch API request to the email URL
+        fetch("https://formspree.io/hloni.khoathane@gmail.com", {
             method: "POST",
             headers: {
-                "Accept": "application/json"        //specifying that we expect to receive a JSON file
+                "Accept": "application/json", // Specifying that we expect to receive a JSON file
             },
-            body: formData
+            body: formData,
         })
-        .then(response => response.json())
-        .then(data => {
-            console.log("Success:", data);
-            alert("Form submitted successfully!");
-        })
-        .catch(error => {
-            console.error("Error:", error);
-            alert("There was an error submitting the form. Please try again later.");
-        });
+            .then(response => response.json())
+            .then(data => {
+                console.log("Success:", data);
+                alert("Form submitted successfully!");
+            })
+            .catch(error => {
+                console.error("Error:", error);
+                alert("There was an error submitting the form. Please try again later.");
+            });
     });
 >>>>>>> e138400b3e4ef8bdd42834e79f0af8dda82d37c7
