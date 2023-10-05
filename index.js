@@ -126,15 +126,15 @@ document.addEventListener('DOMContentLoaded', function() {
         let file = input.files[0];
         alert(`File name: ${file.name}`); 
       }
-    
+ /*   
     //Cross Origin Resource Sharing
     document.getElementById("form").addEventListener("submit", function(event) {
-        const name = document.getElementById('fullName').value;
-        const email = document.getElementById('email').value;
-        const phone = document.getElementById('phone').value;
-        const comments = document.getElementById('comment').value;
+        //const name = document.getElementById('fullName').value;
+        //const email = document.getElementById('email').value;
+        //const phone = document.getElementById('phone').value;
+        //const comments = document.getElementById('comment').value;
 
-        if (!name || !email || !phone || !comments) {
+        if(!isNameValid || !isPhoneValid || !isEmailValid || !isCommentValid) {
             alert('Please fill in all fields.');
             event.preventDefault(); // Prevent the form from submitting
         } else {
@@ -152,11 +152,36 @@ document.addEventListener('DOMContentLoaded', function() {
         .then(response => response.json())
         .then(data => {
             console.log("Success:", data);
-            alert("Form submitted successfully!");
+            alert("Form submitted!");
         })
         .catch(error => {
             console.error("Error:", error);
             alert("There was an error submitting the form. Please try again later.");
         });
     }
+});*/
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+document.getElementById('form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent the form from submitting the traditional way
+    
+    const formData = new FormData(this);
+    fetch('https://formspree.io/hloni.khoathane@gmail.com', {
+        method: 'POST',
+        headers: {
+            'Accept': 'application/json'
+        },
+        body: formData
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log('Success:', data);
+        alert('Form submitted successfully!');
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert('There was an error submitting the form. Please try again later.');
+    });
 });
+
+
