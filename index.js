@@ -126,56 +126,37 @@ document.addEventListener('DOMContentLoaded', function() {
         let file = input.files[0];
         alert(`File name: ${file.name}`); 
       }
-<<<<<<< HEAD
-     
-      //cookies section
-     /* 
-      setCookie = (cName, cValue, expDays) => {
-        let date = new Date();
-        date.setTime(date.getTime() + (expDays * 24 * 60 * 1000));
-        const expires = "expires=" + date.toUTCString();
-        document.cookie = cName + "=" + cValue + ";" + expires + "; path=/";
-      }
     
-      document.getElementById("cookiesBtn").addEventListener("click", () => {
-        document.querySelector("#cookies").style.display = "hidden";
-        setCookie("cookie", true, 30);
-      }) */
-      
-    
-=======
-
     //Cross Origin Resource Sharing
     document.getElementById("form").addEventListener("submit", function(event) {
+        const name = document.getElementById('fullName').value;
+        const email = document.getElementById('email').value;
+        const phone = document.getElementById('phone').value;
+        const comments = document.getElementById('comment').value;
+
+        if (!fullName || !email || !phone || !comments) {
+            alert('Please fill in all fields.');
+            event.preventDefault(); // Prevent the form from submitting
+        } else {
         event.preventDefault(); // Prevent the form from submitting the traditional way
-    
-        const formData = new FormData(this); // Create the new form from the previous one
-    
-        // Access the file input element
-        const fileInput = document.getElementById("fileInput");
-    
-        // Check if a file is selected
-        if (fileInput.files.length > 0) {
-            // Append the selected file to the FormData object
-            formData.append("attachment", fileInput.files[0]);
-        }
-    
-        // Initiating the fetch API request to the email URL
-        fetch("https://formspree.io/hloni.khoathane@gmail.com", {
+
+        const formData = new FormData(this);       //create the new form from the previous one
+    //initiating the fetch API request to the email URL using formspree
+        fetch("https://formspree.io/f/xknlpqdq", { 
             method: "POST",
-            headers: {
+            headers: {                                                  //specifying that we expect to receive a JSON response
                 "Accept": "application/json", // Specifying that we expect to receive a JSON file
             },
             body: formData,
         })
-            .then(response => response.json())
-            .then(data => {
-                console.log("Success:", data);
-                alert("Form submitted successfully!");
-            })
-            .catch(error => {
-                console.error("Error:", error);
-                alert("There was an error submitting the form. Please try again later.");
-            });
-    });
->>>>>>> e138400b3e4ef8bdd42834e79f0af8dda82d37c7
+        .then(response => response.json())
+        .then(data => {
+            console.log("Success:", data);
+            alert("Form submitted successfully!");
+        })
+        .catch(error => {
+            console.error("Error:", error);
+            alert("There was an error submitting the form. Please try again later.");
+        });
+    }
+});
