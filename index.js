@@ -134,7 +134,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const phone = document.getElementById('phone').value;
         const comments = document.getElementById('comment').value;
 
-        if (!fullName || !email || !phone || !comments) {
+        if (!name || !email || !phone || !comments) {
             alert('Please fill in all fields.');
             event.preventDefault(); // Prevent the form from submitting
         } else {
