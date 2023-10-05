@@ -218,8 +218,3 @@ document.getElementById('form').addEventListener('submit', function(event) {
     });
 });
 */
-document.getElementById("game-link").addEventListener("click", function(event) {
-    event.preventDefault(); // Prevents the default link behavior
-    // Open a popup window
-    window.open('game.html', 'Game Window', 'width=600,height=400');
-});
