@@ -126,6 +126,24 @@ document.addEventListener('DOMContentLoaded', function() {
         let file = input.files[0];
         alert(`File name: ${file.name}`); 
       }
+<<<<<<< HEAD
+     
+      //cookies section
+     /* 
+      setCookie = (cName, cValue, expDays) => {
+        let date = new Date();
+        date.setTime(date.getTime() + (expDays * 24 * 60 * 1000));
+        const expires = "expires=" + date.toUTCString();
+        document.cookie = cName + "=" + cValue + ";" + expires + "; path=/";
+      }
+    
+      document.getElementById("cookiesBtn").addEventListener("click", () => {
+        document.querySelector("#cookies").style.display = "hidden";
+        setCookie("cookie", true, 30);
+      }) */
+      
+    
+=======
 
     //Cross Origin Resource Sharing
 
@@ -151,3 +169,4 @@ document.addEventListener('DOMContentLoaded', function() {
             alert("There was an error submitting the form. Please try again later.");
         });
     });
+>>>>>>> e138400b3e4ef8bdd42834e79f0af8dda82d37c7
