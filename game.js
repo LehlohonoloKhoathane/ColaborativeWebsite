@@ -4,7 +4,6 @@ document.getElementById("game-link").addEventListener("click", function(event) {
   window.open('game.html', 'Game Window', 'width=600,height=400');
 });
 
-
 window.addEventListener('DOMContentLoaded', () => {
     // everything goes here
 const tiles = Array.from(document.querySelectorAll('.tile'));
