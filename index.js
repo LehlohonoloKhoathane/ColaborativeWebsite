@@ -189,3 +189,6 @@ document.getElementById('form').addEventListener('submit', function(event) {
     });
 });
 */
+function opeWindowPopup(){
+    window.open('game.html', 'Game Window', 'width=600,height=400');
+}
